@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Korkeapaine {{title}}</title>
+
+    <!-- Bootstrap -->
+    <link href="static/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/bootstrap_override.css" rel="stylesheet">
+    <link href="static/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="starter-template">
+          
+          <h2>Korkeasaari visitor prediction based on weather forecast</h2>
+          The aim of this software is to predict <a href="https://www.korkeasaari.fi/">Korkeasaari zoo</a> daily visitor counts based only on weather and date information using machine learning techniques. The weather information is provided by <a href= "http://fmi.fi/">Finnish metheorological institute</a> API and Korkeasaari vistor counts by <a href= "http://www.hri.fi/fi/dataset/korkeasaaren-kavijamaarat">Helsinki region infoshare</a>.
+          <h3>Prediction for tomorrow: <span class="weather_prediction">{{predictions_w[-1]}}</span> visitors (<span class="date_prediction">{{predictions_d[-1]}}</span> with date and weekday information only)</h3>
+          <h3>Prediction for today: <span class="weather_prediction">{{predictions_w[-2]}}</span> visitors (<span class="date_prediction">{{predictions_d[-2]}}</span>)</h3>
+          <h3>Prediction for yesterday: <span class="weather_prediction">{{predictions_w[-3]}}</span> visitors (<span class="date_prediction">{{predictions_d[-3]}}</span>) vs. actual <span class="real_visitors">{{real}}</span> visitors</h3>
+          <h3>Average accuracy for last 14 predictions: <span class="weather_prediction">{{err_weather_14}} %</span> (<span class="date_prediction">{{err_date_14}} %</span>)</h3>
+          <img src="{{ url_for('figure_file', filename='fig_all_two_weeks.png') }}" />
+          <h3>Average total accuracy: <span class="weather_prediction">{{err_weather}} %</span> (<span class="date_prediction">{{err_date}} %</span>)</h3>
+          <img src="{{ url_for('figure_file', filename='fig_all_history.png') }}" />
+          
+          <h3>The model</h3>
+      
+      </div>
+    </div><!-- /.container -->
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

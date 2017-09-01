@@ -1,0 +1,33 @@
+.jumbotron {
+    background-color: white;
+    color: black;
+    margin-bottom: 0px;
+}
+
+.navbar {
+    border-radius: 0px;
+    background-color: #e4e4f8;
+    border-width: 0px;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: #d5d5f8;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: #d0d0f8;
+}
+.navbar-inverse .navbar-nav > .active > a:active {
+    background-color: #d0d0f8;
+}
+.navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #d0d0f8;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #555;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #000;
+}

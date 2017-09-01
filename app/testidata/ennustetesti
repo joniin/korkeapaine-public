@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection
+    timeStamp="2017-07-08T17:08:20Z"
+    numberMatched="4"
+    numberReturned="4"
+    xmlns:wfs="http://www.opengis.net/wfs/2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:om="http://www.opengis.net/om/2.0"
+    xmlns:omso="http://inspire.ec.europa.eu/schemas/omso/3.0"
+    xmlns:ompr="http://inspire.ec.europa.eu/schemas/ompr/3.0"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:gmd="http://www.isotc211.org/2005/gmd"
+    xmlns:gco="http://www.isotc211.org/2005/gco"
+    xmlns:swe="http://www.opengis.net/swe/2.0"
+    xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0"
+    xmlns:sam="http://www.opengis.net/sampling/2.0"
+    xmlns:sams="http://www.opengis.net/samplingSpatial/2.0"
+    xmlns:wml2="http://www.opengis.net/waterml/2.0"
+    xmlns:target="http://xml.fmi.fi/namespace/om/atmosphericfeatures/1.0"
+    xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd
+    http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/gmlcovAll.xsd
+    http://www.opengis.net/sampling/2.0 http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd
+    http://www.opengis.net/samplingSpatial/2.0 http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd
+    http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd
+    http://inspire.ec.europa.eu/schemas/omso/3.0 http://inspire.ec.europa.eu/schemas/omso/3.0/SpecialisedObservations.xsd
+    http://inspire.ec.europa.eu/schemas/ompr/3.0 http://inspire.ec.europa.eu/schemas/ompr/3.0/Processes.xsd
+    http://www.opengis.net/waterml/2.0 http://schemas.opengis.net/waterml/2.0/waterml2.xsd
+    http://xml.fmi.fi/namespace/om/atmosphericfeatures/1.0 http://xml.fmi.fi/schema/om/atmosphericfeatures/1.0/atmosphericfeatures.xsd">
+
+    
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-kV4p8gl7IGk.mXyjyfaGCT7zO9qJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2of4UzxgmqhMbHy51qRaFOO6dNGTVwzsu7JU07ctqH.FM8YKf4Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zHDRm0ZOXRry.e._lkv7.2Xl35aemHFsyxNLZl7ZdlTzwy1MzZvx4dmWtTNpvxpK7r0zOGttw.Imnn0w7seWlauhAa23Tz56d2epl8dKxp2Gcytu_Jl2VmaNPLZh2srhh5Ydta3TLt4ZeWHp15ZW5z6b.WXJx65eXm_pyV0hZtul06zb.WXHh59HTrRp5bMO10659eWbDjyunXDfp3dHTrpp25e2HZ1y8MOnk0Omnblp9MvCekpodNO3La37stY1WpDA-temperature">
+	                     <om:phenomenonTime>
+                <gml:TimePeriod gml:id="time-interval-1-1">
+                    <gml:beginPosition>2017-06-28T12:00:00Z</gml:beginPosition>
+                    <gml:endPosition>2017-06-28T18:00:00Z</gml:endPosition>
+                </gml:TimePeriod>
+            </om:phenomenonTime>
+            <om:resultTime>
+                <gml:TimeInstant gml:id="time-1-1">
+                    <gml:timePosition>2017-07-08T12:00:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:resultTime> 
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-temperature--"> 
+                            <gml:timePosition>2017-07-08T12:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/6a33fb69-82f6-4944-be01-483774407843/meta?observableProperty=forecast&amp;param=temperature&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-temperature">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-temperature">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-843429-pos-temperature">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">843429</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Kumpula</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">843429</gml:name>
+			<target:representativePoint xlink:href="#point-843429-temperature"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-temperature">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-843429-temperature" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Kumpula</gml:name>
+                               <gml:pos>60.20890 24.96420 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-temperature">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2017-06-28T12:00:00Z</wml2:time>
+				      <wml2:value>NaN</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2017-06-28T15:00:00Z</wml2:time>
+				      <wml2:value>NaN</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2017-06-28T18:00:00Z</wml2:time>
+				      <wml2:value>NaN</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-NiDyo8m0eerp49I2o91kD.FGlTCJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2of4UzxgmqhMbHy51qRaFOO6dNGTVwzsu7JU07ctqH.FM8YKf4Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zHDRm0ZOXRry.e._lkv7.2Xl35aemHFsyxNLZl7ZdlTzwy1MzZvx4dmWtTNpvxpK7r0zOGttw.Imnn0w7seWlauhAa23Tz56d2epl8dKxp2Gcytu_Jl2VmaNPLZh2srhh5Ydtb3Dllx6eGnph6ad.5jobnPpv5ZcnHrl5eb.nJXSFm26XTrNv5ZceHn0dOtGnlsw7XTrn15ZsOPK6dcN.nd0dOumnbl7YdnXLww6eTQ6aduWn0y8J6Smh007ctrfuy1jVakM-precipitation1h">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-precipitation1h--"> 
+                            <gml:timePosition>2017-07-08T12:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/6a33fb69-82f6-4944-be01-483774407843/meta?observableProperty=forecast&amp;param=precipitation1h&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-precipitation1h">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-precipitation1h">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-843429-pos-precipitation1h">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">843429</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Kumpula</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">843429</gml:name>
+			<target:representativePoint xlink:href="#point-843429-precipitation1h"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-precipitation1h">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-843429-precipitation1h" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Kumpula</gml:name>
+                               <gml:pos>60.20890 24.96420 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-precipitation1h">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2017-06-28T12:00:00Z</wml2:time>
+				      <wml2:value>NaN</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2017-06-28T15:00:00Z</wml2:time>
+				      <wml2:value>NaN</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2017-06-28T18:00:00Z</wml2:time>
+				      <wml2:value>NaN</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-4gsHc5.qvFSor_d.kX6Y6zZUHTqJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2of4UzxgmqhMbHy51qRaFOO6dNGTVwzsu7JU07ctqH.FM8YKf4Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zHDRm0ZOXRry.e._lkv7.2Xl35aemHFsyxNLZl7ZdlTzwy1MzZvx4dmWtTNpvxpK7r0zOGttw.Imnn0w7seWlauhAa23Tz56d2epl8dKxp2Gcytu_Jl2VmaNPLZh2srhh5Ydta3fTuyc.GXLk2825z6b.WXJx65eXm_pyV0hZtul06zb.WXHh59HTrRp5bMO10659eWbDjyunXDfp3dHTrpp25e2HZ1y8MOnk0Omnblp9MvCekpodNO3La37stY1WpDA-windspeedms">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-windspeedms--"> 
+                            <gml:timePosition>2017-07-08T12:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/6a33fb69-82f6-4944-be01-483774407843/meta?observableProperty=forecast&amp;param=windspeedms&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-windspeedms">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-windspeedms">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-843429-pos-windspeedms">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">843429</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Kumpula</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">843429</gml:name>
+			<target:representativePoint xlink:href="#point-843429-windspeedms"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-windspeedms">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-843429-windspeedms" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Kumpula</gml:name>
+                               <gml:pos>60.20890 24.96420 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-windspeedms">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2017-06-28T12:00:00Z</wml2:time>
+				      <wml2:value>NaN</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2017-06-28T15:00:00Z</wml2:time>
+				      <wml2:value>NaN</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2017-06-28T18:00:00Z</wml2:time>
+				      <wml2:value>NaN</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-TvHT13KN9XCSlKdh2xsafLkq9eCJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2of4UzxgmqhMbHy51qRaFOO6dNGTVwzsu7JU07ctqH.FM8YKf4Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zHDRm0ZOXRry.e._lkv7.2Xl35aemHFsyxNLZl7ZdlTzwy1MzZvx4dmWtTNpvxpK7r0zOGttw.Imnn0w7seWlauhAa23Tz56d2epl8dKxp2Gcytu_Jl2VmaNPLZh2srhh5Ydtb3Tf0w7Mezf1yY9_bLybnPpv5ZcnHrl5eb.nJXSFm26XTrNv5ZceHn0dOtGnlsw7XTrn15ZsOPK6dcN.nd0dOumnbl7YdnXLww6eTQ6aduWn0y8J6Smh007ctrfuy1jVakM-totalcloudcover">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-totalcloudcover--"> 
+                            <gml:timePosition>2017-07-08T12:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/6a33fb69-82f6-4944-be01-483774407843/meta?observableProperty=forecast&amp;param=totalcloudcover&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-totalcloudcover">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-totalcloudcover">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-843429-pos-totalcloudcover">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">843429</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Kumpula</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">843429</gml:name>
+			<target:representativePoint xlink:href="#point-843429-totalcloudcover"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-totalcloudcover">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-843429-totalcloudcover" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Kumpula</gml:name>
+                               <gml:pos>60.20890 24.96420 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-totalcloudcover">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2017-06-28T12:00:00Z</wml2:time>
+				      <wml2:value>NaN</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2017-06-28T15:00:00Z</wml2:time>
+				      <wml2:value>NaN</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2017-06-28T18:00:00Z</wml2:time>
+				      <wml2:value>NaN</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+</wfs:FeatureCollection>

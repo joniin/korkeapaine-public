@@ -1,0 +1,13 @@
+visitor_data: testidata/visitor_data_test
+weather_data: testidata/weather_data_test
+best_final_weigths: testidata/best_final_weights
+predictions: testidata/predictions
+fig_all_history: figures/fig_all_history
+fig_two_weeks: figures/fig_two_weeks
+fmi_code: fmi_code
+date_test_fig: figures/date_test
+weather_test_fig: figures/weather_test
+sheets_folder: sheets
+xml_tmp: tmp/xml_tmp
+best_init_weights: testidata/best_init_weights
+best_final_weights: testidata/best_final_weights

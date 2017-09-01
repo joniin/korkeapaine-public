@@ -1,0 +1,14 @@
+.weather_prediction{
+    color: green;
+    font-weight: bold;
+}
+
+.date_prediction{
+    color: red;
+    font-weight: bold;
+}
+
+.real_visitors{
+    color: black;
+    font-weight: bold;
+}
